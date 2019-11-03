@@ -1,5 +1,20 @@
 import numpy as np
 import random
+import time
+
+
+def calc_time_taken(method):
+    """Decorator method to calculate time taken inside a method"""
+    def wrapper(*args):
+        # Start clock
+        start = time.time()
+        # Run the method
+        method(*args)
+        # Stop clock
+        end = time.time()
+        # Time taken
+        print("Time taken: " + str(end-start) + " s")
+    return wrapper
 
 
 def dist(p1, p2):
@@ -32,6 +47,7 @@ def compare_lists(list_1, list_2):
         return False
 
 
+@calc_time_taken
 def runner(data, k, prec=5):
     """Runner method for K-Means Clustering"""
     # Randomly selects indices of initial centroids
