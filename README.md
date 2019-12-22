@@ -2,7 +2,7 @@
 Test script that performs K-Means clustering of given data set using Python without using frameworks
 
 ## Dependencies:
-- Python modules: numpy, random
+- Python modules: numpy, random, pandas, time
 - Python version: 3.7.4
 
 Inputs required:
