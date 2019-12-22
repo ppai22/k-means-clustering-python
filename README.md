@@ -10,7 +10,7 @@ Inputs required:
 - k_value: No of clusters needed
 - precision: The precision with which calculations have to be made
 
-# Files
+## Files
 ```KMeansClustering.py``` is a single script which runs the clustering<br>
 ```Clustering.py``` is the same script written as a class and can be called with ```from Clustering import KMeans```<br>
 ```test.py``` is an implementation of the algorithm using the class on the [Iris Dataset](https://archive.ics.uci.edu/ml/datasets/iris)
